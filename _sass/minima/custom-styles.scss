@@ -9,8 +9,13 @@
 .site-header {
   display: none;
 }
-.site-footer-end {
-  display: none;
+h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+a .post-link {
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight";
