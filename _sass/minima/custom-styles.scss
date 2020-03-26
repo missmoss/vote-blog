@@ -9,9 +9,8 @@
 .site-header {
   display: none;
 }
-
-body {
-  font-family: 'Noto Sans', sans-serif;
+.site-footer-end {
+  display: none;
 }
 // If you want to turn off dark background for syntax highlighting, comment or delete the below line.
 @import "minima/fastpages-dracula-highlight";
