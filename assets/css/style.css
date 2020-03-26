@@ -429,7 +429,9 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 /*----- ADD YOUR STYLES BELOW -------*/
 .site-header { display: none; }
 
-.site-footer-end { display: none; }
+h1 { font-size: 1.5rem; font-weight: bold; }
+
+a .post-link { font-size: 1.5rem; font-weight: bold; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
