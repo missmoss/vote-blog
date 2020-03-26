@@ -429,11 +429,11 @@ table td { text-overflow: ellipsis; overflow: hidden; max-width: 15em; }
 /*----- ADD YOUR STYLES BELOW -------*/
 .site-header { display: none; }
 
-h1 { font-size: 1.5rem; font-weight: bold; }
+h1 { font-size: 1.5rem !important; font-weight: bold !important; }
 
-a { color: #BA5E0A; }
+a { color: #BA5E0A !important; }
 
-a .post-link { font-size: 1.5rem; font-weight: bold; }
+a .post-link { font-size: 1.5rem !important; font-weight: bold !important; }
 
 .language-python + .language-plaintext { border-left: 1px solid grey; margin-left: 1rem !important; }
 
