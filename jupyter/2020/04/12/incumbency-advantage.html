@@ -7,8 +7,8 @@
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Does Incumbency Advantage Exist In Taiwan’s Legislator Elections?" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Go through turnout in different cities." />
-<meta property="og:description" content="Go through turnout in different cities." />
+<meta name="description" content="Exploration through regression discontinuity" />
+<meta property="og:description" content="Exploration through regression discontinuity" />
 <link rel="canonical" href="https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html" />
 <meta property="og:url" content="https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html" />
 <meta property="og:site_name" content="Taiwan Vote Data and Viz" />
@@ -16,7 +16,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-12T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Go through turnout in different cities.","@type":"BlogPosting","headline":"Does Incumbency Advantage Exist In Taiwan’s Legislator Elections?","dateModified":"2020-04-12T00:00:00-05:00","datePublished":"2020-04-12T00:00:00-05:00","image":"https://missmoss.github.io/vote-blog/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html"},"url":"https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html","@context":"https://schema.org"}</script>
+{"description":"Exploration through regression discontinuity","@type":"BlogPosting","headline":"Does Incumbency Advantage Exist In Taiwan’s Legislator Elections?","dateModified":"2020-04-12T00:00:00-05:00","datePublished":"2020-04-12T00:00:00-05:00","image":"https://missmoss.github.io/vote-blog/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html"},"url":"https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 <link rel="stylesheet" href="/vote-blog/assets/css/style.css"><link type="application/atom+xml" rel="alternate" href="https://missmoss.github.io/vote-blog/feed.xml" title="Taiwan Vote Data and Viz" />
 
@@ -25,8 +25,8 @@
 <meta name="generator" content="Jekyll v4.0.0" />
 <meta property="og:title" content="Does Incumbency Advantage Exist In Taiwan’s Legislator Elections?" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="Go through turnout in different cities." />
-<meta property="og:description" content="Go through turnout in different cities." />
+<meta name="description" content="Exploration through regression discontinuity" />
+<meta property="og:description" content="Exploration through regression discontinuity" />
 <link rel="canonical" href="https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html" />
 <meta property="og:url" content="https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html" />
 <meta property="og:site_name" content="Taiwan Vote Data and Viz" />
@@ -34,7 +34,7 @@
 <meta property="og:type" content="article" />
 <meta property="article:published_time" content="2020-04-12T00:00:00-05:00" />
 <script type="application/ld+json">
-{"description":"Go through turnout in different cities.","@type":"BlogPosting","headline":"Does Incumbency Advantage Exist In Taiwan’s Legislator Elections?","dateModified":"2020-04-12T00:00:00-05:00","datePublished":"2020-04-12T00:00:00-05:00","image":"https://missmoss.github.io/vote-blog/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html"},"url":"https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html","@context":"https://schema.org"}</script>
+{"description":"Exploration through regression discontinuity","@type":"BlogPosting","headline":"Does Incumbency Advantage Exist In Taiwan’s Legislator Elections?","dateModified":"2020-04-12T00:00:00-05:00","datePublished":"2020-04-12T00:00:00-05:00","image":"https://missmoss.github.io/vote-blog/images/chart-preview.png","mainEntityOfPage":{"@type":"WebPage","@id":"https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html"},"url":"https://missmoss.github.io/vote-blog/jupyter/2020/04/12/incumbency-advantage.html","@context":"https://schema.org"}</script>
 <!-- End Jekyll SEO tag -->
 
 <link href="https://unpkg.com/@primer/css/dist/primer.css" rel="stylesheet" />
@@ -89,7 +89,7 @@ window.onload = wrap_img;
         <article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <h1 class="post-title p-name" itemprop="name headline">Does Incumbency Advantage Exist In Taiwan&#39;s Legislator Elections?</h1><p class="page-description">Go through turnout in different cities.</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-12T00:00:00-05:00" itemprop="datePublished">
+    <h1 class="post-title p-name" itemprop="name headline">Does Incumbency Advantage Exist In Taiwan&#39;s Legislator Elections?</h1><p class="page-description">Exploration through regression discontinuity</p><p class="post-meta post-meta-title"><time class="dt-published" datetime="2020-04-12T00:00:00-05:00" itemprop="datePublished">
         Apr 12, 2020
       </time>
        • <span class="read-time" title="Estimated read time">
@@ -109,27 +109,6 @@ window.onload = wrap_img;
     
 
     
-      
-        <div class="pb-5 d-flex flex-wrap flex-justify-end">
-          <div class="px-2">
-
-    <a href="https://github.com/missmoss/vote-blog/tree/master/_notebooks/2020-04-12- incumbency-advantage.ipynb" role="button" target="_blank">
-<img class="notebook-badge-image" src="/vote-blog/assets/badges/github.svg" alt="View On GitHub">
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://mybinder.org/v2/gh/missmoss/vote-blog/master?filepath=_notebooks%2F2020-04-12-+incumbency-advantage.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/vote-blog/assets/badges/binder.svg" alt="Open In Binder"/>
-    </a>
-</div>
-
-          <div class="px-2">
-    <a href="https://colab.research.google.com/github/missmoss/vote-blog/blob/master/_notebooks/2020-04-12- incumbency-advantage.ipynb" target="_blank">
-        <img class="notebook-badge-image" src="/vote-blog/assets/badges/colab.svg" alt="Open In Colab"/>
-    </a>
-</div>
-        </div>
       </header>
 
   <div class="post-content e-content" itemprop="articleBody">
@@ -141,8 +120,10 @@ window.onload = wrap_img;
 </li>
 <li class="toc-entry toc-h1"><a href="#Taiwan's-legislator-elections">Taiwan&#39;s legislator elections </a>
 <ul>
+<li class="toc-entry toc-h2"><a href="#Two-major-parties">Two major parties </a></li>
 <li class="toc-entry toc-h2"><a href="#KMT's-view">KMT&#39;s view </a></li>
 <li class="toc-entry toc-h2"><a href="#DPP's-view">DPP&#39;s view </a></li>
+<li class="toc-entry toc-h2"><a href="#Reference">Reference </a></li>
 </ul>
 </li>
 </ul><!--
@@ -167,15 +148,15 @@ window.onload = wrap_img;
 <h1 id="Incumbency-advantage">
 <a class="anchor" href="#Incumbency-advantage" aria-hidden="true"><span class="octicon octicon-link"></span></a>Incumbency advantage<a class="anchor-link" href="#Incumbency-advantage"> </a>
 </h1>
-<p>People usually believe the incumbent candidate has a higher winning rate while in re-election. Does the incumbent effect still exist when we extend it to the party level? That is, whether a candidate has a higher winning probability while the seat/office was won by their party last time.</p>
+<p>People usually believe the incumbent candidate has a higher winning rate in the re-election. Does the incumbent effect still exist when we extend it to the party level? That is, whether a candidate has a higher winning probability while the seat/office was won by their party last time.</p>
 <h2 id="Measure-the-incumbency-advantage-effect:-regression-discontinuity">
 <a class="anchor" href="#Measure-the-incumbency-advantage-effect:-regression-discontinuity" aria-hidden="true"><span class="octicon octicon-link"></span></a>Measure the incumbency advantage effect: regression discontinuity<a class="anchor-link" href="#Measure-the-incumbency-advantage-effect:-regression-discontinuity"> </a>
 </h2>
-<p>To measure the incumbent effect, Lee <sup class="footnote-ref" id="fnref-1"><a href="#fn-1">1</a></sup> proposed a regression discontinuity design on previous election margins. The design studied the observations near the cut-off, margin equals zero in this case, and saw if there was a significant difference in the winning probability between the samples with its previous margin less than zero, says losing last time, and the samples winning last time. Since only the observations with near zero margin are studied and the margin is so small that it probably won just by change, whether a party won the previous election can be conisdered as almost randomly assigned. Hence, the difference between the two sides is the effect we are curious about. I will apply the same method on Taiwan's legislator elections.</p>
+<p>To measure the incumbent effect, Lee [^1] proposed a regression discontinuity design on previous election margins. The design studied the observations near the cut-off, margin equals zero in this case, and saw if there was a significant difference in the winning probability between the samples with its previous margin less than zero, says losing last time, and the samples winning last time. Since only the observations with near zero margin are studied and the margin is so small that it probably won just by chance, whether a party won the previous election can be conisdered as almost randomly assigned. Hence, the difference between the two sides is the effect we are curious about. Lee found the incumbency advantage existed in representative elections in US. Does the same incumbent effect can be found in Taiwan's legislator elections?</p>
 <h1 id="Taiwan's-legislator-elections">
 <a class="anchor" href="#Taiwan's-legislator-elections" aria-hidden="true"><span class="octicon octicon-link"></span></a>Taiwan's legislator elections<a class="anchor-link" href="#Taiwan's-legislator-elections"> </a>
 </h1>
-<p>The legislators are the parliment members at the national level. They can propose general law creation and modification. They also  Elected every four year.</p>
+<p>The legislators are the parliment members at the national level. They can propose general law creation and modification. They also supervise the goverment. The legislators are elected every four year. The candidate</p>
 <p>There are 113 seats of legislators in total:</p>
 <ol>
 <li>
@@ -185,12 +166,10 @@ window.onload = wrap_img;
 <li>
 <strong>Indigenous</strong>: 6 seats. Single non-transferable voting in multi-member districts, exclusive for persons with indigenous status.</li>
 </ol>
-<div class="footnotes">
-<hr>
-<ol>
-<li id="fn-1"><p>Lee DS. Randomized experiments from non-random selection in U.S. house elections. J Econometrics 2008;142:675–97.<a href="#fnref-1" class="footnote">↩</a></p></li>
-</ol>
-</div>
+<h2 id="Two-major-parties">
+<a class="anchor" href="#Two-major-parties" aria-hidden="true"><span class="octicon octicon-link"></span></a>Two major parties<a class="anchor-link" href="#Two-major-parties"> </a>
+</h2>
+<p>Most elections in Taiwan are competed by two major parties, KMT and DPP, though there are over one hundred parties regiested and around ten of them are active. KMT is pro-China and relatively consevative while DPP is pro-independent and more progressive.</p>
 
 </div>
 </div>
@@ -215,7 +194,9 @@ window.onload = wrap_img;
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
-<span class="n">ggplot</span><span class="p">(</span><span class="n">dt</span><span class="p">)</span> <span class="o">+</span>
+<span class="n">dt</span> <span class="o">%&gt;%</span>
+<span class="nb">filter</span><span class="p">(</span><span class="o">!</span>is.na<span class="o">(</span>margin_all_KMT_pos_last<span class="o">))</span> %&gt;%
+<span class="n">ggplot</span><span class="p">()</span> <span class="o">+</span>
 <span class="n">geom_point</span><span class="p">(</span><span class="n">aes</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="n">margin_all_KMT_pos_last</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">KMT_elected</span><span class="p">))</span> <span class="o">+</span>
 <span class="n">scale_x_continuous</span><span class="p">(</span><span class="n">labels</span> <span class="o">=</span> <span class="n">scales</span><span class="p">::</span><span class="n">percent</span><span class="p">)</span> <span class="o">+</span>
 <span class="n">labs</span><span class="p">(</span><span class="n">x</span> <span class="o">=</span> <span class="s2">"KMT's margin in previous election"</span><span class="p">,</span>
@@ -229,15 +210,6 @@ window.onload = wrap_img;
     </details>
 <div class="output_wrapper">
 <div class="output">
-
-<div class="output_area">
-
-<div class="output_subarea output_stream output_stderr output_text">
-<pre>Warning message:
-“Removed 101 rows containing missing values (geom_point).”
-</pre>
-</div>
-</div>
 
 <div class="output_area">
 
@@ -533,6 +505,20 @@ WIMSE bias weight            0.500          0.500
 </div>
     
 
+<div class="cell border-box-sizing text_cell rendered">
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Reference">
+<a class="anchor" href="#Reference" aria-hidden="true"><span class="octicon octicon-link"></span></a>Reference<a class="anchor-link" href="#Reference"> </a>
+</h2>
+<div class="footnotes">
+<hr>
+<ol></ol>
+</div>
+
+</div>
+</div>
+</div>
 </div>
 
 
