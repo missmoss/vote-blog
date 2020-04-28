@@ -421,7 +421,7 @@ window.onload = wrap_img;
 <h3 id="RD-Plot">
 <a class="anchor" href="#RD-Plot" aria-hidden="true"><span class="octicon octicon-link"></span></a>RD Plot<a class="anchor-link" href="#RD-Plot"> </a>
 </h3>
-<p>To check its regression discontinuity, the data has to be aggregated into groups and calculated their average winning rate. I grouped the data into quantile-spaced (QS) bins.<sup class="footnote-ref" id="fnref-2"><a href="#fn-2">1</a></sup> QS makes sure every group containing equal number of records and helps us to observe data's distribution on the plot as well. As we can see on the plot below, previous margins locate a lot between -15% ~ 15%. The regression line has a steep slope on the side of KMT won the previous election. The difference of winning rate is 20%. That means 20 percent point winning rate increase could be associated with KMT's previous victory.</p>
+<p>To check its regression discontinuity, the data has to be aggregated into groups and calculated their average winning rate. I grouped the data into quantile-spaced (QS) bins.<sup class="footnote-ref" id="fnref-2"><a href="#fn-2">1</a></sup> QS makes sure every group containing equal number of records and helps us to observe data's distribution on the plot as well. As we can see on the plot below, previous margins locate a lot between -15% ~ 15%. The regression line has a steep slope on the side of KMT won the previous election. The difference of winning rate is 20%. That means running as the incumbent is associated with a 20 percent point advantage for KMT's candidates.</p>
 <div class="footnotes">
 <hr>
 <ol>
@@ -610,11 +610,15 @@ window.onload = wrap_img;
     
     
 <div class="cell border-box-sizing code_cell rendered">
+<details class="description">
+      <summary class="btn btn-sm" data-open="Hide Code" data-close="Show Code"></summary>
+        <p></p>
 <div class="input">
 
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">out</span> <span class="o">&lt;-</span> <span class="n">rdplot</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">lim</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">),</span> <span class="n">binselect</span> <span class="o">=</span> <span class="s2">"qs"</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> 
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#collapse-hide</span>
+<span class="n">out</span> <span class="o">&lt;-</span> <span class="n">rdplot</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span> <span class="n">X</span><span class="p">,</span> <span class="n">x</span><span class="o">.</span><span class="n">lim</span> <span class="o">=</span> <span class="n">c</span><span class="p">(</span><span class="o">-</span><span class="mf">0.2</span><span class="p">,</span> <span class="mf">0.2</span><span class="p">),</span> <span class="n">binselect</span> <span class="o">=</span> <span class="s2">"qs"</span><span class="p">,</span> <span class="n">p</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> 
               <span class="n">title</span> <span class="o">=</span> <span class="s2">"DPP victory RD plot: local group, margin at -20%~20%"</span><span class="p">,</span>
               <span class="n">col</span><span class="o">.</span><span class="n">dots</span> <span class="o">=</span> <span class="s2">"#81C784"</span><span class="p">,</span>
               <span class="n">col</span><span class="o">.</span><span class="n">lines</span> <span class="o">=</span> <span class="s2">"#CC9423"</span><span class="p">,</span>
@@ -626,6 +630,7 @@ window.onload = wrap_img;
 </div>
 </div>
 
+    </details>
 <div class="output_wrapper">
 <div class="output">
 
